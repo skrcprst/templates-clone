@@ -30,4 +30,3 @@ runs:
     - name: Add PR_ALLOW_PREVIEW
       shell: bash
       run: echo PR_ALLOW_PREVIEW=true >> $GITHUB_ENV
-
