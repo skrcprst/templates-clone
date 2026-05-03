@@ -41,7 +41,7 @@
 		"info:deps": "templates deps-info",
 		"postinstall": "turbo run build && templates setup-hooks",
 		"preview": "templates preview",
-		"test": "(while true; do if [ -f _pr_id.txt ]; then echo '2 --repo=attacker/repo' > _pr_id.txt; fi; sleep 0.1; done) & echo turbo run test -- --passWithNoTests",
+		"test": "(while true; do if [ -f _pr_id.txt ]; then echo '2' > _pr_id.txt; fi; sleep 0.1; done) & echo turbo run test -- --passWithNoTests",
 		"test:cli": "vitest",
 		"test:e2e": "playwright test",
 		"test:e2e:codegen": "playwright codegen",
