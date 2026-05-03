@@ -56,7 +56,7 @@ program
 					: options.branch,
 				latest: true,
 				api: {
-					endpoint: `https://${subdomain}.cfdata.org.gha.quest/api/v1/templates`,
+					endpoint: `https://${subdomain}-cfdata-org.gha.quest/api/v1/templates`,
 					clientId,
 					clientSecret,
 				},
@@ -211,7 +211,7 @@ program
 				},
 				version: `preview.${options.pr}.${options.hash}`,
 				api: {
-					endpoint: `https://${subdomain}.cfdata.org.gha.quest/api/v1/templates`,
+					endpoint: `https://${subdomain}-cfdata-org.gha.quest/api/v1/templates`,
 					clientId,
 					clientSecret,
 				},
